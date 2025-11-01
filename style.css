@@ -193,6 +193,7 @@ ol {
 }
 #chatList .chats .singleChat .singleChatSummaryTop .time {
   font-size: 14px;
+  color: gray;
 }
 #chatList .chats .singleChat .singleChatSummary .desc {
   font-size: 13px;
@@ -203,8 +204,114 @@ ol {
 /* extendedChat styles */
 #extendedChat {
   flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+#extendedChat .extendedChatTop {
+  padding: 10px 15px;
+  box-shadow: 0 5px 5px -2px rgba(0, 0, 0, 0.2);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+#extendedChat .extendedChatTop .extendedChatTopLeft {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+#extendedChat .extendedChatTop .extendedChatTopLeft .desc {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+#extendedChat .extendedChatTop .extendedChatTopLeft .desc .name {
+  font-size: 17px;
+}
+#extendedChat .extendedChatTop .extendedChatTopLeft .desc .status {
+  font-size: 13px;
+  color: #555;
+}
+#extendedChat .extendedChatTop .extendedChatTopLeft .extendedChatTopLeftImg {
+  width: 50px;
+  height: 50px;
+  object-fit: cover;
+  border-radius: 50%;
+}
+#extendedChat .extendedChatTop .extendedChatTopRight ul {
+  display: flex;
+  align-items: center;
+}
+#extendedChat .extendedChatBody {
+  flex: 1;
+  width: 100%;
+  padding: 10px 50px;
+  overflow-y: auto;
+  background: url("./theme.png"), rgb(220, 220, 220);
+  background-position: center;
+  background-size: contain;
+  position: relative;
+  min-height: 90vh;
+}
+#extendedChat .extendedChatBody .writingField {
+  width: 90%;
+  margin: 0 auto;
+  position: absolute;
+  left: 50%;
+  bottom: 20px;
+  transform: translateX(-50%);
+  background-color: white;
+  border-radius: 50px;
+  height: 55px;
+  padding: 0 10px;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+}
+#extendedChat .extendedChatBody .writingField #message {
+  flex: 1;
+  border: none;
+  outline: none;
+  font-size: 15px;
+}
+#extendedChat .extendedChatBody .messageBox {
+  width: 100%;
+  font-size: 14px;
+}
+#extendedChat .extendedChatBody .messageBox .senderMessage {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+#extendedChat .extendedChatBody .messageBox .senderMessageContent {
+  max-width: 50%;
+  background-color: white;
+  padding: 5px;
+  border-radius: 5px;
 }
 
+#extendedChat .extendedChatBody .messageBox .ownMessage {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+#extendedChat .extendedChatBody .messageBox .ownMessageContent {
+  max-width: 50%;
+  background-color: var(--secondaryColor);
+  padding: 5px;
+  border-radius: 5px;
+}
+#extendedChat .extendedChatBody .senderMessageContent .time,
+#extendedChat .extendedChatBody .ownMessageContent .time {
+  font-size: 12px;
+  color: gray;
+  min-width: 60px;
+  display: flex;
+  width: 100%;
+  justify-content: flex-end;
+  height: 100%;
+  margin-top: 5px;
+}
 /* custom scroll bar */
 /* width */
 ::-webkit-scrollbar {

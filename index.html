@@ -112,17 +112,93 @@
             <div class="singleChatSummary">
               <div class="singleChatSummaryTop">
                 <p class="name">Ethan Parker</p>
-                <p class="time">10:35 AM</p>
+                <p class="time">11:50 AM</p>
               </div>
-              <p class="desc">
-                Lorem ipsum dolor sit amet, consectetur adipisicing
-              </p>
+              <p class="desc">Almost done. Don't worry about that.</p>
             </div>
           </div>
         </div>
       </div>
       <!-- extended chat -->
-      <div id="extendedChat">Extended chat</div>
+      <div id="extendedChat">
+        <!-- extended chat header -->
+        <div class="extendedChatTop">
+          <div class="extendedChatTopLeft">
+            <img
+              class="extendedChatTopLeftImg"
+              src="./images/man1.jpg"
+              alt=""
+            />
+            <div class="desc">
+              <p class="name">Ethan Parker</p>
+              <p class="status">Online</p>
+            </div>
+          </div>
+          <div class="extendedChatTopRight">
+            <ul>
+              <li>
+                <span class="navIcon"><i class="fa-solid fa-video"></i></span>
+              </li>
+              <li>
+                <span class="navIcon"
+                  ><i class="fa-solid fa-magnifying-glass"></i
+                ></span>
+              </li>
+              <li>
+                <span class="navIcon"
+                  ><i class="fa-solid fa-ellipsis-vertical"></i
+                ></span>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <!-- extended top body -->
+        <div class="extendedChatBody">
+          <div class="conversations">
+            <!-- repeat this messageBox -->
+            <div class="messageBox">
+              <div class="senderMessage">
+                <div class="senderMessageContent">
+                  <p>Hey ! How are your?</p>
+                  <span class="time">11:45 AM</span>
+                </div>
+              </div>
+              <div class="ownMessage">
+                <div class="ownMessageContent">
+                  <p>Hi ! I am fine. You?</p>
+                  <span class="time">11:45 AM</span>
+                </div>
+              </div>
+            </div>
+            <div class="messageBox">
+              <div class="senderMessage">
+                <div class="senderMessageContent">
+                  <p>What about the project?</p>
+                  <span class="time">11:48 AM</span>
+                </div>
+              </div>
+              <div class="ownMessage">
+                <div class="ownMessageContent">
+                  <p>Almost done. Don't worry about that.</p>
+                  <span class="time">11:50 AM</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- writing field -->
+          <div class="writingField">
+            <span class="navIcon"><i class="fa-solid fa-plus"></i></span>
+            <span class="navIcon"><i class="fa-solid fa-face-smile"></i></span>
+            <input
+              type="text"
+              name="message"
+              id="message"
+              placeholder="Type a message"
+            />
+            <span class="navIcon"><i class="fa-solid fa-microphone"></i></span>
+          </div>
+        </div>
+      </div>
     </div>
 
     <!-- script for dynamic chats -->
