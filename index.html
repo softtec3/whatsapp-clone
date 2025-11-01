@@ -67,7 +67,48 @@
         </div>
       </div>
       <!-- chat list -->
-      <div id="chatList">chat list</div>
+      <div id="chatList">
+        <!-- chat list top -->
+        <div class="chatListTop">
+          <!-- chat list header -->
+          <div class="chatListTopHeader">
+            <h3 class="companyName">ULS WORLD LLC</h3>
+
+            <ul>
+              <li>
+                <span class="navIcon"
+                  ><i class="fa-solid fa-comment-medical"></i
+                ></span>
+              </li>
+              <li>
+                <span class="navIcon"
+                  ><i class="fa-solid fa-ellipsis-vertical"></i
+                ></span>
+              </li>
+            </ul>
+          </div>
+          <!-- chat list search box -->
+          <div id="searchBox">
+            <input
+              type="text"
+              name="search"
+              placeholder="Search or start a new chat"
+            />
+            <i id="searchIcon" class="fa-solid fa-magnifying-glass"></i>
+          </div>
+          <!-- tabs -->
+          <ul id="tabs">
+            <li><button class="tabsBtn active">All</button></li>
+            <li><button class="tabsBtn">Unread</button></li>
+            <li><button class="tabsBtn">Favorites</button></li>
+            <li><button class="tabsBtn">Groups</button></li>
+          </ul>
+        </div>
+        <!-- chats -->
+        <div class="chats">
+          <div class="singleChat"></div>
+        </div>
+      </div>
       <!-- extended chat -->
       <div id="extendedChat">Extended chat</div>
     </div>
