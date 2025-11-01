@@ -20,14 +20,15 @@
     />
     <!-- css -->
     <link rel="stylesheet" href="style.css" />
-    <title>Whatsapp Clone -</title>
+    <title>ULS WORLD LLC Chats</title>
   </head>
   <body>
     <div id="container">
       <!-- navigation bar -->
       <div id="navigationBar">
         <!-- navigation bar top -->
-        <div class="navigationBarTop">
+        <div></div>
+        <!-- <div class="navigationBarTop">
           <ul>
             <li>
               <span class="navIcon active"
@@ -46,7 +47,7 @@
               <span class="navIcon"><i class="fa-solid fa-users"></i></span>
             </li>
           </ul>
-        </div>
+        </div> -->
         <!-- navigation bar bottom -->
         <div class="navigationBarBottom">
           <ul>
@@ -74,7 +75,7 @@
           <div class="chatListTopHeader">
             <h3 class="companyName">ULS WORLD LLC</h3>
 
-            <ul>
+            <!-- <ul>
               <li>
                 <span class="navIcon"
                   ><i class="fa-solid fa-comment-medical"></i
@@ -85,7 +86,7 @@
                   ><i class="fa-solid fa-ellipsis-vertical"></i
                 ></span>
               </li>
-            </ul>
+            </ul> -->
           </div>
           <!-- chat list search box -->
           <div id="searchBox">
@@ -98,16 +99,16 @@
           </div>
           <!-- tabs -->
           <ul id="tabs">
-            <li><button class="tabsBtn active">All</button></li>
-            <li><button class="tabsBtn">Unread</button></li>
-            <li><button class="tabsBtn">Favorites</button></li>
-            <li><button class="tabsBtn">Groups</button></li>
+            <li><button class="tabsBtn active">All chats</button></li>
+            <li><button class="tabsBtn">Unread chats</button></li>
+            <!-- <li><button class="tabsBtn">Favorites</button></li>
+            <li><button class="tabsBtn">Groups</button></li> -->
           </ul>
         </div>
         <!-- all chats -->
         <div class="chats">
           <!-- single chats -->
-          <div class="singleChat active">
+          <div class="singleChat">
             <img src="./images/man1.jpg" alt="name" />
             <div class="singleChatSummary">
               <div class="singleChatSummaryTop">
@@ -120,18 +121,18 @@
         </div>
       </div>
       <!-- extended chat -->
-      <div id="extendedChat">
+      <div id="extendedChat" style="display: none">
         <!-- extended chat header -->
         <div class="extendedChatTop">
           <div class="extendedChatTopLeft">
             <img
               class="extendedChatTopLeftImg"
-              src="./images/man1.jpg"
+              src="./images/women.jpg"
               alt=""
             />
             <div class="desc">
-              <p class="name">Ethan Parker</p>
-              <p class="status">Online</p>
+              <p class="name">Mary Kay Zitzelsberger</p>
+              <p class="status">Offline</p>
             </div>
           </div>
           <div class="extendedChatTopRight">
@@ -159,28 +160,350 @@
             <div class="messageBox">
               <div class="senderMessage">
                 <div class="senderMessageContent">
-                  <p>Hey ! How are your?</p>
-                  <span class="time">11:45 AM</span>
+                  <p>mammaz2224@gmail.com</p>
+                  <p>309 William Street Yorkville, OH 43971</p>
+                  <span class="time">10:45 AM</span>
                 </div>
               </div>
               <div class="ownMessage">
                 <div class="ownMessageContent">
-                  <p>Hi ! I am fine. You?</p>
-                  <span class="time">11:45 AM</span>
+                  <p>Hello Mary Kay Zitzelsberger,</p>
+                  <p>We are sorry for late replying.</p>
+                  <p>How can we help you?</p>
+                  <span class="time">12:20 PM</span>
+                </div>
+                <div class="ownMessageContent">
+                  <p>Would you like to purchase our products?</p>
+                  <span class="time">12:20 PM</span>
                 </div>
               </div>
             </div>
+            <!-- message box 2 -->
             <div class="messageBox">
               <div class="senderMessage">
                 <div class="senderMessageContent">
-                  <p>What about the project?</p>
-                  <span class="time">11:48 AM</span>
+                  <p>Yeah!</p>
+                  <span class="time">12:36 PM</span>
                 </div>
               </div>
               <div class="ownMessage">
                 <div class="ownMessageContent">
-                  <p>Almost done. Don't worry about that.</p>
-                  <span class="time">11:50 AM</span>
+                  <p>In which product, are you interested to purchase?</p>
+                  <span class="time">12:36 PM</span>
+                </div>
+                <div class="ownMessageContent">
+                  <p>Where did you see our products?</p>
+                  <span class="time">12:37 PM</span>
+                </div>
+              </div>
+            </div>
+            <!-- message box 3 -->
+            <div class="messageBox">
+              <div class="senderMessage">
+                <div class="senderMessageContent">
+                  <p>From your website.</p>
+                  <span class="time">12:45 PM</span>
+                </div>
+              </div>
+              <div class="ownMessage">
+                <p class="overlay">
+                  "In which product, are you interested to purchase?""
+                </p>
+                <div class="ownMessageContent">
+                  <p>?</p>
+                  <span class="time">12:46 PM</span>
+                </div>
+                <div class="ownMessageContent">
+                  <p>Can you send the link?</p>
+                  <span class="time">12:48 PM</span>
+                </div>
+                <div class="ownMessageContent">
+                  <p>Hello mam, are you there?</p>
+                  <span class="time">2:30 PM</span>
+                </div>
+              </div>
+            </div>
+            <!-- message box 3 -->
+            <div class="messageBox">
+              <div class="senderMessage">
+                <div class="senderMessageContent">
+                  <p>Now, I am in office. I will contact with you later.</p>
+                  <span class="time">2:40 PM</span>
+                </div>
+              </div>
+              <div class="ownMessage">
+                <div class="ownMessageContent">
+                  <p>Okay mam.</p>
+                  <span class="time">2:48 PM</span>
+                </div>
+                <div class="ownMessageContent">
+                  <p>
+                    Sure, no problem. Please take your time. We’ll be here
+                    whenever you’re ready.
+                  </p>
+                  <span class="time">2:48 PM</span>
+                </div>
+              </div>
+            </div>
+            <!-- message box 3 -->
+            <div class="messageBox">
+              <div class="senderMessage">
+                <div class="senderMessageContent">
+                  <p>Hi. I am back. Anyone here?</p>
+                  <span class="time">7:05 PM</span>
+                </div>
+              </div>
+              <div class="ownMessage">
+                <div class="ownMessageContent">
+                  <p>
+                    Welcome back, mam! <br />
+                    Which product were you interested in?
+                  </p>
+                  <span class="time">7:15 PM</span>
+                </div>
+              </div>
+            </div>
+            <!-- message box 3 -->
+            <div class="messageBox">
+              <div class="senderMessage">
+                <div class="senderMessageContent">
+                  <p>
+                    It’s the “Single Vendor E-commerce Site with Core Coding
+                    (Front-End)” that I saw on your website.
+                  </p>
+                  <span class="time">7:19 PM</span>
+                </div>
+              </div>
+              <div class="ownMessage">
+                <div class="ownMessageContent">
+                  <p>
+                    Oh, great choice, mam! <br />
+                    That’s one of our most popular digital products. <br />
+                    Could you please share the product link so I can verify its
+                    current availability for you?
+                  </p>
+                  <span class="time">7:20 PM</span>
+                </div>
+              </div>
+            </div>
+            <!-- message box 3 -->
+            <div class="messageBox">
+              <div class="senderMessage">
+                <div class="senderMessageContent">
+                  <p>
+                    Sure, here’s the link:
+                    <a
+                      href="https://ulsworldllc.com/pages/products-details.php?id=1"
+                      >https://ulsworldllc.com/pages/products-details.php?id=1</a
+                    >
+                  </p>
+                  <span class="time">7:23 PM</span>
+                </div>
+              </div>
+              <div class="ownMessage">
+                <div class="ownMessageContent">
+                  <p>Thank you, mam. Let me check…</p>
+                  <span class="time">7:24 PM</span>
+                </div>
+                <div class="ownMessageContent">
+                  <p>
+                    Yes, the Single Vendor E-commerce Site (Front-End) is
+                    available right now for purchase.
+                  </p>
+                  <span class="time">7:27 PM</span>
+                </div>
+              </div>
+            </div>
+            <!-- message box 3 -->
+            <div class="messageBox">
+              <div class="senderMessage">
+                <div class="senderMessageContent">
+                  <p>
+                    Okay, great! How much does it cost? And do you have any
+                    discount on it?
+                  </p>
+                  <span class="time">7:33 PM</span>
+                </div>
+              </div>
+              <div class="ownMessage">
+                <div class="ownMessageContent">
+                  <p>The price for this product is $150 (one-time payment).</p>
+                  <p>
+                    Sorry mam, there’s no discount available for this item —
+                    it’s already offered at our best rate considering the amount
+                    of custom core coding included.
+                  </p>
+                  <span class="time">7:39 PM</span>
+                </div>
+                <div class="ownMessageContent">
+                  <p>Would you like to proceed with the purchase?</p>
+                  <span class="time">7:40 PM</span>
+                </div>
+              </div>
+            </div>
+            <!-- message box 3 -->
+            <div class="messageBox">
+              <div class="senderMessage">
+                <div class="senderMessageContent">
+                  <p>Yes, that’s fine. I’d like to purchase it.</p>
+                  <span class="time">7:42 PM</span>
+                </div>
+              </div>
+              <div class="ownMessage">
+                <div class="ownMessageContent">
+                  <p>
+                    That’s great, mam! Thank you so much for choosing our
+                    product. <br />
+                    Before we proceed, please take a moment to review our Terms
+                    & Conditions and Refund Policy below:
+                  </p>
+                  <span class="time">7:44 PM</span>
+                </div>
+                <div class="ownMessageContent">
+                  <p>Terms and Conditions:</p>
+
+                  <p>
+                    <a href="https://ulsworldllc.com/terms_and_conditions"
+                      >https://ulsworldllc.com/terms_and_conditions</a
+                    >
+                  </p>
+                  <span class="time">7:44 PM</span>
+                </div>
+                <div class="ownMessageContent">
+                  <p>Refund policy:</p>
+
+                  <p>
+                    Where as, we are working with digital products. So that,
+                    after paying the invoice, you can claim refund within 24
+                    hours.
+                  </p>
+                  <p>
+                    We will send your product file to your provided email within
+                    24 hours to 48 hours.
+                  </p>
+                  <p>
+                    Once your product will be delivered you can't claim refund
+                    anymore.
+                  </p>
+                  <span class="time">7:50 PM</span>
+                </div>
+              </div>
+            </div>
+            <!-- message box 3 -->
+            <div class="messageBox">
+              <div class="senderMessage">
+                <div class="senderMessageContent">
+                  <p>
+                    Yes, I agree with your terms and refund policy. Could you
+                    please tell me about the payment process?
+                  </p>
+                  <span class="time">7:52 PM</span>
+                </div>
+              </div>
+              <div class="ownMessage">
+                <div class="ownMessageContent">
+                  <p>
+                    Of course, mam. <br />
+                    Our payment process is simple — we’ll send you a custom
+                    invoice directly.
+                  </p>
+
+                  <span class="time">7:53 PM</span>
+                </div>
+              </div>
+            </div>
+            <!-- message box 3 -->
+            <div class="messageBox">
+              <div class="senderMessage">
+                <div class="senderMessageContent">
+                  <p>
+                    Okay, that’s fine. Can you please send me the payment link?
+                  </p>
+                  <span class="time">7:55 PM</span>
+                </div>
+              </div>
+              <div class="ownMessage">
+                <div class="ownMessageContent">
+                  <p>
+                    Sure, mam. Here’s your secure payment link for the Single
+                    Vendor E-commerce Site (Front-End): <br /><br />
+                    <a
+                      href="https://www.paypal.com/invoice/p/#INV2-ECEX-U4E9-5WMV-JJN6"
+                      >https://www.paypal.com/invoice/p/#INV2-ECEX-U4E9-5WMV-JJN6</a
+                    >
+                    <br /><br />
+
+                    Please click the link to complete your payment. <br />
+                    Once we receive the confirmation, we’ll deliver your product
+                    files and setup guide after 24 hours. <br />
+
+                    If you face any issue during payment, feel free to message
+                    us anytime.
+                  </p>
+
+                  <span class="time">7:53 PM</span>
+                </div>
+                <div class="ownMessageContent">
+                  <p>
+                    Hello mam — just checking: were you able to complete the
+                    payment?
+                  </p>
+
+                  <span class="time">11:01 PM</span>
+                </div>
+              </div>
+            </div>
+            <!-- message box 3 -->
+            <div class="messageBox">
+              <div class="senderMessage">
+                <div class="senderMessageContent">
+                  <p>Yes, I have completed the payment.</p>
+                  <span class="time">11:06 PM</span>
+                </div>
+              </div>
+              <div class="ownMessage">
+                <div class="ownMessageContent">
+                  <p>
+                    Thank you! Could you please share the transaction ID /
+                    payment reference so I can verify it in our system?
+                  </p>
+
+                  <span class="time">11:08 PM</span>
+                </div>
+              </div>
+            </div>
+            <!-- message box 3 -->
+            <div class="messageBox">
+              <div class="senderMessage">
+                <div class="senderMessageContent">
+                  <p>Transaction ID: 0F765832CP832521B</p>
+                  <span class="time">11:10 PM</span>
+                </div>
+              </div>
+              <div class="ownMessage">
+                <div class="ownMessageContent">
+                  Got it — thank you for the transaction ID. I’ve verified your
+                  payment and everything is confirmed. <br />
+
+                  We will send the product files (source code + setup guide) to
+                  mammaz2224@gmail.com within 48 hours. <br />
+
+                  If you change your mind, please let us know within 24 hours
+                  from now and we will cancel the order and process a refund
+                  (provided the product files have not yet been delivered).
+                  After the files are delivered, refunds are not available
+                  because this is a digital product.
+
+                  <span class="time">11:15 PM</span>
+                </div>
+                <div class="ownMessageContent">
+                  If you need any further assistance or technical support,
+                  please feel free to contact us anytime — we’re always happy to
+                  help. <br /><br />
+
+                  Have a wonderful day, Mary Kay!
+
+                  <span class="time">11:16 PM</span>
                 </div>
               </div>
             </div>
@@ -206,96 +529,113 @@
       const chatsContainer = document.querySelector(".chats");
       const messages = [
         {
-          name: "Ethan Parker",
+          name: "John",
           image: "./images/man (1).jpg",
-          time: "11:04 AM",
-          text: "Hey, I am ready to go..",
+          time: "11:40 AM",
+          text: "Hello, can you tell me more about your services?",
+          class: "inactive",
         },
         {
           name: "Jacob Mitchell",
           image: "./images/man (2).jpg",
-          time: "11:47 AM",
-          text: "Good Afternoon",
+          time: "10:15 AM",
+          text: "Do you build custom websites?",
+          class: "inactive",
         },
         {
           name: "Ryan Carter",
           image: "./images/man (3).jpg",
-          time: "01:47 AM",
-          text: "Where is the delivery",
+          time: "9:59 AM",
+          text: "I want to know about your eCommerce solutions.",
+          class: "inactive",
         },
         {
           name: "Nathan Brooks",
           image: "./images/man (4).jpg",
-          time: "09:47 AM",
-          text: "Here we go",
+          time: "8:04 AM",
+          text: "Can you share some of your recent projects?",
+          class: "inactive",
         },
         {
           name: "Dylan Reed",
           image: "./images/man (5).jpg",
-          time: "07:10 AM",
-          text: "How are you?",
+          time: "Yesterday",
+          text: "Do you provide technical support after purchase?",
+          class: "inactive",
         },
         {
           name: "Logan Hayes",
           image: "./images/man (6).jpg",
-          time: "10:10 AM",
-          text: "Where are you?",
+          time: "Yesterday",
+          text: "I’m interested in your web development services.",
+          class: "inactive",
         },
         {
           name: "Tyler Bennett",
           image: "./images/man (7).jpg",
-          time: "03:00 PM",
-          text: "I have received the parcel",
+          time: "Yesterday",
+          text: "Can you tell me your pricing for website design?",
+          class: "inactive",
+        },
+        {
+          name: "Mary Kay Zitzelsberger",
+          image: "./images/women.jpg",
+          time: "30 OCT, 2025",
+          text: "If you need any further assistance or technical support ... ",
+          class: "clickClick",
         },
         {
           name: "Brandon Cooper",
           image: "./images/man (8).jpg",
-          time: "04:00 PM",
-          text: "I am waiting for you",
+          time: "30 OCT, 2025",
+          text: "Do you offer any demo for your software?",
+          class: "inactive",
         },
         {
           name: "Jason Miller",
           image: "./images/man (9).jpg",
-          time: "06:12 PM",
-          text: "Forward the message to john",
+          time: "30 OCT, 2025",
+          text: "How long does it take to deliver a project?",
+          class: "inactive",
         },
         {
           name: "Austin Turner",
           image: "./images/man (10).jpg",
-          time: "12:12 PM",
-          text: "Hey whats up?",
+          time: "29 OCT, 2025",
+          text: "Can I get more details about your packages?",
+          class: "inactive",
         },
         {
           name: "Lucas Griffin",
           image: "./images/man (11).jpg",
-          time: "05:55 PM",
-          text: "I am still waiting for your response",
-        },
-        {
-          name: "Aaron Foster",
-          image: "./images/man (12).jpg",
-          time: "03:12 PM",
-          text: "Are you there?",
+          time: "28 OCT, 2025",
+          text: "Do you create responsive websites for mobile?",
+          class: "inactive",
         },
       ];
 
       for (const chat of messages) {
         chatsContainer.innerHTML += `
-            <div class="singleChat">
-            <img src="${chat.image}" alt="${chat.name}" />
-            <div class="singleChatSummary">
-              <div class="singleChatSummaryTop">
-                <p class="name">${chat.name}</p>
-                <p class="time">${chat.time}</p>
-              </div>
-              <p class="desc">
-                ${chat.text}
-              </p>
-             </div>
-             </div>
-        
-        `;
+                  <div class="singleChat ${chat.class}">
+                  <img src="${chat.image}" alt="${chat.name}" />
+                  <div class="singleChatSummary">
+                    <div class="singleChatSummaryTop">
+                      <p class="name">${chat.name}</p>
+                      <p class="time">${chat.time}</p>
+                    </div>
+                    <p class="desc">
+                      ${chat.text}
+                    </p>
+                   </div>
+                   </div>
+
+              `;
       }
+      const clickClick = document.querySelector(".clickClick");
+      const extendedChat = document.getElementById("extendedChat");
+      clickClick.addEventListener("click", () => {
+        extendedChat.style.display = "flex";
+      });
     </script>
   </body>
 </html>
