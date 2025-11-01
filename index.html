@@ -104,13 +104,122 @@
             <li><button class="tabsBtn">Groups</button></li>
           </ul>
         </div>
-        <!-- chats -->
+        <!-- all chats -->
         <div class="chats">
-          <div class="singleChat"></div>
+          <!-- single chats -->
+          <div class="singleChat active">
+            <img src="./images/man1.jpg" alt="name" />
+            <div class="singleChatSummary">
+              <div class="singleChatSummaryTop">
+                <p class="name">Ethan Parker</p>
+                <p class="time">10:35 AM</p>
+              </div>
+              <p class="desc">
+                Lorem ipsum dolor sit amet, consectetur adipisicing
+              </p>
+            </div>
+          </div>
         </div>
       </div>
       <!-- extended chat -->
       <div id="extendedChat">Extended chat</div>
     </div>
+
+    <!-- script for dynamic chats -->
+    <script>
+      const chatsContainer = document.querySelector(".chats");
+      const messages = [
+        {
+          name: "Ethan Parker",
+          image: "./images/man (1).jpg",
+          time: "11:04 AM",
+          text: "Hey, I am ready to go..",
+        },
+        {
+          name: "Jacob Mitchell",
+          image: "./images/man (2).jpg",
+          time: "11:47 AM",
+          text: "Good Afternoon",
+        },
+        {
+          name: "Ryan Carter",
+          image: "./images/man (3).jpg",
+          time: "01:47 AM",
+          text: "Where is the delivery",
+        },
+        {
+          name: "Nathan Brooks",
+          image: "./images/man (4).jpg",
+          time: "09:47 AM",
+          text: "Here we go",
+        },
+        {
+          name: "Dylan Reed",
+          image: "./images/man (5).jpg",
+          time: "07:10 AM",
+          text: "How are you?",
+        },
+        {
+          name: "Logan Hayes",
+          image: "./images/man (6).jpg",
+          time: "10:10 AM",
+          text: "Where are you?",
+        },
+        {
+          name: "Tyler Bennett",
+          image: "./images/man (7).jpg",
+          time: "03:00 PM",
+          text: "I have received the parcel",
+        },
+        {
+          name: "Brandon Cooper",
+          image: "./images/man (8).jpg",
+          time: "04:00 PM",
+          text: "I am waiting for you",
+        },
+        {
+          name: "Jason Miller",
+          image: "./images/man (9).jpg",
+          time: "06:12 PM",
+          text: "Forward the message to john",
+        },
+        {
+          name: "Austin Turner",
+          image: "./images/man (10).jpg",
+          time: "12:12 PM",
+          text: "Hey whats up?",
+        },
+        {
+          name: "Lucas Griffin",
+          image: "./images/man (11).jpg",
+          time: "05:55 PM",
+          text: "I am still waiting for your response",
+        },
+        {
+          name: "Aaron Foster",
+          image: "./images/man (12).jpg",
+          time: "03:12 PM",
+          text: "Are you there?",
+        },
+      ];
+
+      for (const chat of messages) {
+        chatsContainer.innerHTML += `
+            <div class="singleChat">
+            <img src="${chat.image}" alt="${chat.name}" />
+            <div class="singleChatSummary">
+              <div class="singleChatSummaryTop">
+                <p class="name">${chat.name}</p>
+                <p class="time">${chat.time}</p>
+              </div>
+              <p class="desc">
+                ${chat.text}
+              </p>
+             </div>
+             </div>
+        
+        `;
+      }
+    </script>
   </body>
 </html>
