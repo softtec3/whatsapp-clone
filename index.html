@@ -108,7 +108,7 @@
         <!-- all chats -->
         <div class="chats">
           <!-- single chats -->
-          <div class="singleChat">
+          <!-- <div class="singleChat">
             <img src="./images/man1.jpg" alt="name" />
             <div class="singleChatSummary">
               <div class="singleChatSummaryTop">
@@ -117,7 +117,7 @@
               </div>
               <p class="desc">Almost done. Don't worry about that.</p>
             </div>
-          </div>
+          </div> -->
         </div>
       </div>
       <!-- extended chat -->
@@ -157,6 +157,7 @@
         <div class="extendedChatBody">
           <div class="conversations">
             <!-- repeat this messageBox -->
+            <div class="dateBox">30 OCT 2025</div>
             <div class="messageBox">
               <div class="senderMessage">
                 <div class="senderMessageContent">
@@ -507,6 +508,129 @@
                 </div>
               </div>
             </div>
+            <!-- message box 5 -->
+            <div class="messageBox">
+              <div class="senderMessage">
+                <div class="senderMessageContent">
+                  <p>
+                    Actually, I’m having some issues with my email. Is it
+                    possible for you to send the product files directly here
+                    instead?
+                  </p>
+                  <span class="time">11:32 PM</span>
+                </div>
+              </div>
+              <div class="ownMessage">
+                <div class="ownMessageContent">
+                  <p>
+                    Sure, mam — we can send the product files directly here, no
+                    problem.
+                    <br /><br />
+                    However, as per our policy, delivery will be made after 24
+                    hours from the payment confirmation time.
+                  </p>
+                  <span class="time">11:34 PM</span>
+                </div>
+                <div class="ownMessageContent">
+                  <p>
+                    Once the delivery time is reached, we’ll share your product
+                    files and setup guide safely here in this chat.
+                  </p>
+                  <span class="time">11:34 PM</span>
+                </div>
+              </div>
+            </div>
+            <!-- message box 6 -->
+            <div class="messageBox">
+              <div class="senderMessage">
+                <div class="senderMessageContent">
+                  <p>
+                    Okay, that’s perfectly fine. I’ll wait for the files here
+                    after 24 hours. Thank you!
+                  </p>
+                  <span class="time">11:36 PM</span>
+                </div>
+              </div>
+              <div class="ownMessage">
+                <div class="ownMessageContent">
+                  <p>
+                    You’re most welcome, mam! <br />
+                    Thank you for your patience and understanding. <br /><br />
+                    We’ll notify you here once your files are ready for
+                    delivery.
+                  </p>
+                  <span class="time">11:36 PM</span>
+                </div>
+              </div>
+              <div class="dateBox">01 NOV 2025</div>
+            </div>
+            <!-- message box 7 -->
+            <div class="messageBox">
+              <div class="ownMessage">
+                <div class="ownMessageContent">
+                  <p>
+                    Hello mam, good morning <br />
+                    As promised, I’m sending your purchased product files now —
+                    the Single Vendor E-commerce Site (Front-End).
+                  </p>
+                  <span class="time">11:00 AM</span>
+                </div>
+                <!-- File message UI -->
+                <div class="fileMessage">
+                  <div class="fileInfo">
+                    <img
+                      src="./images/zip.png"
+                      alt="File Icon"
+                      class="fileIcon"
+                    />
+                    <div class="fileDetails">
+                      <p class="fileName">E-commerce_main.zip</p>
+                      <p class="fileMeta">27 MB, ZIP archive</p>
+                    </div>
+                  </div>
+                  <div class="fileButtons">
+                    <button class="fileBtn">Open</button>
+                  </div>
+                  <span class="time">11:01 AM Downloaded 12:45 PM</span>
+                </div>
+                <!-- File message UI -->
+                <div class="fileMessage">
+                  <div class="fileInfo">
+                    <img
+                      src="./images/zip.png"
+                      alt="File Icon"
+                      class="fileIcon"
+                    />
+                    <div class="fileDetails">
+                      <p class="fileName">setup_guide.zip</p>
+                      <p class="fileMeta">5 MB, ZIP archive</p>
+                    </div>
+                  </div>
+                  <div class="fileButtons">
+                    <button class="fileBtn">Open</button>
+                  </div>
+                  <span class="time">11:01 AM Downloaded 12:45 PM</span>
+                </div>
+
+                <div class="ownMessageContent">
+                  <p>
+                    Please feel free to contact me anytime if you face any issue
+                    while using or setting up the product. <br /><br />
+                    I’ll be more than happy to assist you whenever you need
+                    help.
+                  </p>
+                  <span class="time">11:02 AM</span>
+                </div>
+                <div class="ownMessageContent">
+                  <p>
+                    Thank you once again for your trust and purchase, mam.
+                    <br />
+                    Have a wonderful day ahead!
+                  </p>
+                  <span class="time">11:02 AM</span>
+                </div>
+              </div>
+            </div>
           </div>
           <!-- writing field -->
           <div class="writingField">
@@ -529,87 +653,90 @@
       const chatsContainer = document.querySelector(".chats");
       const messages = [
         {
-          name: "John",
-          image: "./images/man (1).jpg",
-          time: "11:40 AM",
-          text: "Hello, can you tell me more about your services?",
-          class: "inactive",
+          name: "Mary Kay Zitzelsberger",
+          image: "./images/women.jpg",
+          time: "11:02 AM",
+          text: "Thank you once again for your trust and purchase.....",
+          class: "clickClick",
         },
         {
           name: "Jacob Mitchell",
           image: "./images/man (2).jpg",
-          time: "10:15 AM",
-          text: "Do you build custom websites?",
+          time: "10:54 AM",
+          text: "Yes Jacob, we do build custom websites — completely....",
+          class: "inactive",
+        },
+        {
+          name: "John",
+          image: "./images/man (1).jpg",
+          time: "10:48 AM",
+          text: "Sure, we provide professional web and software development ...",
           class: "inactive",
         },
         {
           name: "Ryan Carter",
           image: "./images/man (3).jpg",
-          time: "9:59 AM",
-          text: "I want to know about your eCommerce solutions.",
+          time: "10:41 AM",
+          text: "We offer full eCommerce solutions including website, admin panel,...",
           class: "inactive",
         },
         {
           name: "Nathan Brooks",
           image: "./images/man (4).jpg",
-          time: "8:04 AM",
-          text: "Can you share some of your recent projects?",
+          time: "10:00 AM",
+          text: "Of course Nathan! You can check out our recent projects on our ...",
           class: "inactive",
         },
+
         {
           name: "Dylan Reed",
           image: "./images/man (5).jpg",
-          time: "Yesterday",
-          text: "Do you provide technical support after purchase?",
+          time: "Yesterday, 5:35 PM",
+          text: "Yes Dylan, we provide full technical support after purchase...",
           class: "inactive",
         },
         {
           name: "Logan Hayes",
           image: "./images/man (6).jpg",
-          time: "Yesterday",
-          text: "I’m interested in your web development services.",
+          time: "Yesterday, 4:22 PM",
+          text: "Thanks Logan! Yes, we specialize in modern and responsive web ...",
           class: "inactive",
         },
         {
           name: "Tyler Bennett",
           image: "./images/man (7).jpg",
-          time: "Yesterday",
-          text: "Can you tell me your pricing for website design?",
+          time: "Yesterday, 2:40 PM",
+          text: "Sure Tyler, our pricing depends on project scope — but ...",
           class: "inactive",
         },
-        {
-          name: "Mary Kay Zitzelsberger",
-          image: "./images/women.jpg",
-          time: "30 OCT, 2025",
-          text: "If you need any further assistance or technical support ... ",
-          class: "clickClick",
-        },
-        {
-          name: "Brandon Cooper",
-          image: "./images/man (8).jpg",
-          time: "30 OCT, 2025",
-          text: "Do you offer any demo for your software?",
-          class: "inactive",
-        },
+
         {
           name: "Jason Miller",
           image: "./images/man (9).jpg",
           time: "30 OCT, 2025",
-          text: "How long does it take to deliver a project?",
+          text: "Hi Jason, most projects take between 2 to 4 weeks, depending on ...",
+          class: "inactive",
+        },
+
+        {
+          name: "Brandon Cooper",
+          image: "./images/man (8).jpg",
+          time: "30 OCT, 2025",
+          text: "Yes Brandon, we do provide a live demo of our software before final...",
           class: "inactive",
         },
         {
           name: "Austin Turner",
           image: "./images/man (10).jpg",
           time: "29 OCT, 2025",
-          text: "Can I get more details about your packages?",
+          text: "Sure Austin, I’ll send you more details about our packages and ...",
           class: "inactive",
         },
         {
           name: "Lucas Griffin",
           image: "./images/man (11).jpg",
           time: "28 OCT, 2025",
-          text: "Do you create responsive websites for mobile?",
+          text: "Yes Lucas, all our websites are fully responsive and optimized for...",
           class: "inactive",
         },
       ];
